@@ -27,8 +27,12 @@ videos_watched = st.number_input("Number of Videos Watched", min_value=0)
 quizzes_taken = st.number_input("Number of Quizzes Taken", min_value=0)
 quiz_scores = st.number_input("Average Quiz Score", min_value=0, max_value=100)
 completion_rate = st.number_input("Course Completion Rate (%)", min_value=0, max_value=100)
-# device_type = st.selectbox("Device Type", ["Mobile", "Desktop", "Tablet"])
-device_type = st.number_input("Device Type", min_value=0, max_value=1)
+
+device_dict = {"Mobile/Tablet":1, "Desktop/Laptop":0}
+device_type_cat = st.selectbox("Device Type", ["Mobile/Tablet", "Desktop/Laptop"])
+device_type = device_dict[device_type_cat]
+
+# device_type = st.number_input("Device Type", min_value=0, max_value=1)
 
 # Prediction button
 if st.button("Predict"):
