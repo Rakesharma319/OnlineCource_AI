@@ -38,7 +38,7 @@ device_type = device_dict[device_type_cat]
 st.subheader("Entered Input:")
 st.write("Course Category: ", course_category)
 st.write("Time Spent on Course (hours): ", time_spent)
-st.write("Number of Videos Watched": , videos_watched)
+st.write("Number of Videos Watched: ", videos_watched)
 st.write("Number of Quizzes Taken: ", quizzes_taken)
 st.write("Average Quiz Score: ",quiz_scores)
 st.write("Course Completion Rate (%): ", completion_rate)
