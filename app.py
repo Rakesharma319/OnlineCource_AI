@@ -42,7 +42,7 @@ st.write("Number of Videos Watched", videos_watched)
 st.write("Number of Quizzes Taken", quizzes_taken)
 st.write("Average Quiz Score",quiz_scores)
 st.write("Course Completion Rate (%)", completion_rate)
-st.write("Device Type", device_type)
+st.write("Device Type", device_type_cat)
 
 # Display Prediction values
 st.subheader("Prediction:")
