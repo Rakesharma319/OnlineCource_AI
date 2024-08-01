@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 # Load the saved model
-model = joblib.load('online_course_engagement_model.pkl')
+model = joblib.load('online_course_engagement_model1.pkl')
 
 # Define the prediction function
 def predict_course_completion(course_category, time_spent, videos_watched, quizzes_taken, quiz_scores, completion_rate, device_type):
