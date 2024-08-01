@@ -28,7 +28,7 @@ quizzes_taken = st.number_input("Number of Quizzes Taken", min_value=0)
 quiz_scores = st.number_input("Average Quiz Score", min_value=0, max_value=100)
 completion_rate = st.number_input("Course Completion Rate (%)", min_value=0, max_value=100)
 # device_type = st.selectbox("Device Type", ["Mobile", "Desktop", "Tablet"])
-device_type = st.selectbox("Device Type", min_value=0, max_value=1)
+device_type = st.number_input("Device Type", min_value=0, max_value=1)
 
 # Prediction button
 if st.button("Predict"):
