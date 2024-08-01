@@ -44,6 +44,9 @@ st.write("Average Quiz Score",quiz_scores)
 st.write("Course Completion Rate (%)", completion_rate)
 st.write("Device Type", device_type)
 
+# Display Prediction values
+st.subheader("Prediction:")
+
 # Prediction button
 if st.button("Predict"):
   prediction = predict_course_completion(course_category, time_spent, videos_watched, quizzes_taken, quiz_scores, completion_rate, device_type)
