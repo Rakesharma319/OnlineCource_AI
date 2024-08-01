@@ -38,4 +38,4 @@ if st.button("Predict"):
     st.success("The student is likely to complete the course.")
   else:
     st.error("The student is unlikely to complete the course.")
-!streamlit run app.py
+
