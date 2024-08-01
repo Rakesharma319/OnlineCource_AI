@@ -34,6 +34,10 @@ device_type = device_dict[device_type_cat]
 
 # device_type = st.number_input("Device Type", min_value=0, max_value=1)
 
+# Display entered input values
+st.subheader("Entered Input:")
+st.write(input_data)
+
 # Prediction button
 if st.button("Predict"):
   prediction = predict_course_completion(course_category, time_spent, videos_watched, quizzes_taken, quiz_scores, completion_rate, device_type)
